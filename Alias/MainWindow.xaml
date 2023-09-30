@@ -1,0 +1,34 @@
+﻿<Window x:Class="Alias.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Alias"
+        mc:Ignorable="d"
+        Title="Alias" Height="450" Width="450" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White"/>
+                <GradientStop Color="#FF929292" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border CornerRadius="0,0,170,170" Margin="-43,-182,-43,110">
+            <Border.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/background.jpg"/>
+            </Border.Background>
+        </Border>
+        <Label Content="Alias" HorizontalAlignment="Left" Margin="76,103,0,0" VerticalAlignment="Top" Width="273" BorderBrush="Black" FontSize="36" FontWeight="Bold" FontFamily="Hotel De Paris"/>
+        <Button Content="Play" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Height="95" Width="276" FontSize="48" Click="Button_Click" FontFamily="Bahnschrift SemiBold SemiCondensed" Background="#FFD6D6D6" BorderThickness="3,3,3,3">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="FUSION solutions" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Microsoft YaHei UI Light" Opacity="0.4"/>
+    </Grid>
+</Window>
